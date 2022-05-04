@@ -10,15 +10,15 @@ Groups:
 
 The things to implement for each group are (things in italic should be banal):
 * _UPD based_: **JE**
-* _No protocols on top of UPD_: **XX**
-* _No protocol on top of itself_: **XX**
-* Recover from connection drops: **XX**
+* _No protocols on top of UPD_: **JA**
+* _No protocol on top of itself_: **AE**
+* Recover from connection drops: **JA**
 * Support connection migration: **JE**
-* Reliability (check also what do we want as reliability): **XX**
+* Reliability (check also what do we want as reliability): **AE**
 * Flow control: **JE**
-* Minimal congestion control (AIMD): **XX**
-* _No authentication, ecc. ecc._: **XX**
-* Support checksums checks: **XX**
+* Minimal congestion control (AIMD): **AE**
+* _No authentication, ecc. ecc._: **AE**
+* Support checksums checks: **JA**
 * Support multiple (parallel/seq) transfers: **JE**
-* Transfer in both directions: **XX**
-* Which error conditions and how to handle them: **XX**
+* Transfer in both directions: **JA**
+* Which error conditions and how to handle them: **AE**
