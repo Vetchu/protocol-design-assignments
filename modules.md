@@ -4,21 +4,21 @@ People:
 * __EUGE__ = https://github.com/euberdeveloper
 
 Groups:
-* __GA__ = (JACE, ALEK) (EUGE)
-* __GB__ = (JACE) (ALEK, EUGE)
-* __GC__ = (JACE, EUGE) (ALEK)
+* __JA__ = (JACE, ALEK) (EUGE)
+* __AE__ = (JACE) (ALEK, EUGE)
+* __JE__ = (JACE, EUGE) (ALEK)
 
 The things to implement for each group are (things in italic should be banal):
-* _UPD based_: **GC**
+* _UPD based_: **JE**
 * _No protocols on top of UPD_: **XX**
 * _No protocol on top of itself_: **XX**
 * Recover from connection drops: **XX**
-* Support connection migration: **XX**
+* Support connection migration: **JE**
 * Reliability (check also what do we want as reliability): **XX**
-* Flow control: **XX**
+* Flow control: **JE**
 * Minimal congestion control (AIMD): **XX**
 * _No authentication, ecc. ecc._: **XX**
 * Support checksums checks: **XX**
-* Support multiple (parallel/seq) transfers: **XX**
+* Support multiple (parallel/seq) transfers: **JE**
 * Transfer in both directions: **XX**
 * Which error conditions and how to handle them: **XX**
