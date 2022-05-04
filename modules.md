@@ -1,4 +1,4 @@
-Note:
+People:
 * __JACE__ = https://github.com/Vetchu
 * __ALEK__ = https://github.com/AleksandraSwierkowska
 * __EUGE__ = https://github.com/euberdeveloper
@@ -8,7 +8,7 @@ Groups:
 * __GB__ = (JACE) (ALEK, EUGE)
 * __GC__ = (JACE, EUGE) (ALEK)
 
-The things to implement for each group are:
+The things to implement for each group are (things in italic should be banal):
 * _UPD based_: **GC**
 * _No protocols on top of UPD_: **XX**
 * _No protocol on top of itself_: **XX**
