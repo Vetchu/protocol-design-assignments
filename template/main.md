@@ -6,10 +6,10 @@ workgroup = "Group I"
 [seriesInfo]
 name = "{{NAME}}"
 value = "{{ID}}"
-stream = "IETF"
-status = "informational"
+stream = "{{STREAM}}"
+status = "{{STATUS}}"
 
-date = 2018-08-21T00:00:00Z
+date = "{{DATE}}"
 
 [[author]]
 initials="Bibbo"

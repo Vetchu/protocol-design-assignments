@@ -4,6 +4,9 @@
         "NAME": "{{NAME}}",
         "AREA": "TUM",
         "WORKGRUP": "Group I",
-        "ID": "name"
+        "ID": "name",
+        "STREAM": "IETF",
+        "STATUS": "informational",
+        "DATE": "2022-06-05"
     }
 }
