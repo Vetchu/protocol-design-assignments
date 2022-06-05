@@ -36,3 +36,7 @@ The error packet is used to report an error to the client. All the error packets
 
 - **error type** _(X bytes)_: The type of the error.
   
+
+## Checksums
+
+The packets are incapsulated in UDP diagrams, that use a checksum to check for integrity of the transmitted data. For this reason and for the reliability of the protocol, {{NAME}} does not use any checksum.
