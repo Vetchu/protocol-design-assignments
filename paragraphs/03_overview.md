@@ -1,6 +1,6 @@
 ## Overview
 
-XTP is not a general purpose protocol, in that it is aimed for file transfer. This document defines version 1 of XTP and in the future it may be possible that newer versions will extend the functionalities or deeply change the ones described in this document. To see the version independent properties, refer to [INVARIANTS].
+XTP is not a general purpose protocol, in that it is aimed for file transfer. This document defines version 1 of XTP and in the future it may be possible that newer versions will extend the functionalities or deeply change the ones described in this document.
 
 XTP is a connection-oriented protocol that creates a stateful interaction between a client and server. For each file transfer there is a different connection and the terms "client" and "server" are relative to a single connection, so a client in a connection can be a server in another connection and vice versa.
 
