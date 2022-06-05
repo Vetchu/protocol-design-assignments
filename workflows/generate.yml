@@ -16,11 +16,13 @@ jobs:
       
       - name: Install mmark
         run: ./scripts/install_mmark.sh 
-         
 
       - name: Install Xml2Rfc
         run: apt-get install -y xml2rfc
 
-      - name: Generate xml
-        run: bin/mmark template/main.md > temp/spec.xml
+      - name: Generate xml for RFC
+        run: bin/mmarkmmark template/main.md > output/spec.xml
+
+      - name: Generate final output
+        run: xml2rfc output/spec.xml --v3 --html --pdf --text
         
