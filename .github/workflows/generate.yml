@@ -25,7 +25,7 @@ jobs:
         run: sudo apt-get install -y xml2rfc
 
       - name: Generate xml for RFC
-        run: bin/mmarkmmark template/main.md > output/spec.xml
+        run: bin/mmark template/main.md > output/spec.xml
 
       - name: Generate final output
         run: xml2rfc output/spec.xml --v3 --html --pdf --text
