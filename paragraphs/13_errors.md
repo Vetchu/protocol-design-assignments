@@ -1,4 +1,4 @@
-# Error conditions and handling them
+## Error conditions and handling them
 
 The protocol handles six types of errors:
 
