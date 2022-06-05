@@ -1,6 +1,6 @@
 ## General mechanism
 
-In this section, the general mechanism of the model is described of {{NAME}} is described. The interactions between the client and server are therfore here described.
+In this section, the general mechanism of the model is described of XTP is described. The interactions between the client and server are therfore here described.
 
 ### Connection establishment
 

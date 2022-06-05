@@ -1,6 +1,6 @@
 ## Packets
 
-The packets defined by the {{NAME}} protocol are defined in this section.
+The packets defined by the XTP protocol are defined in this section.
 
 ### Base header
 
@@ -23,7 +23,7 @@ A special packet is a packet that... TODO
 
 It is used to establish a connection and perform a request to the server.
 
-- **version** _(X bytes)_: The version of {{NAME}} that the client wants to use.
+- **version** _(X bytes)_: The version of XTP that the client wants to use.
 - **file id** _(X bytes)_: The file id that the client wants to download. If it is 0, the client requests the list of files in the server.
 
 ### Slow down packet
@@ -39,4 +39,4 @@ The error packet is used to report an error to the client. All the error packets
 
 ## Checksums
 
-The packets are incapsulated in UDP diagrams, that use a checksum to check for integrity of the transmitted data. For this reason and for the reliability of the protocol, {{NAME}} does not use any checksum.
+The packets are incapsulated in UDP diagrams, that use a checksum to check for integrity of the transmitted data. For this reason and for the reliability of the protocol, XTP does not use any checksum.
