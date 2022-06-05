@@ -1,3 +1,9 @@
 {
-    "version": "0.0.2"
+    "version": "0.0.2",
+    "meta": {
+        "NAME": "{{NAME}}",
+        "AREA": "TUM",
+        "WORKGRUP": "Group I",
+        "ID": "name"
+    }
 }

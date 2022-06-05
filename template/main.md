@@ -1,11 +1,11 @@
 %%%
-Title = "Mmark Document"
+Title = "{{NAME}} - The most flexible protocol for robust file transfer"
 area = "TUM"
 workgroup = "Group I"
 
 [seriesInfo]
-name = "My test"
-value = "my-test-00"
+name = "{{NAME}}"
+value = "{{ID}}"
 stream = "IETF"
 status = "informational"
 
