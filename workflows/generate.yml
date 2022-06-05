@@ -1,11 +1,11 @@
 name: Build
-on: 
+on:
   push:
     branches:
-      - master
+      - mmark
   pull_request:
     branches:
-      - master
+      - mmark
 
 jobs:
   build:
@@ -13,9 +13,13 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      
+
+      - name: Get version of the project
+        id: project-version
+        uses: "euberdeveloper/ga-project-version@main"
+
       - name: Install mmark
-        run: ./scripts/install_mmark.sh 
+        run: ./scripts/install_mmark.sh
 
       - name: Install Xml2Rfc
         run: apt-get install -y xml2rfc
@@ -25,4 +29,22 @@ jobs:
 
       - name: Generate final output
         run: xml2rfc output/spec.xml --v3 --html --pdf --text
-        
+
+      - name: Compresses output
+        uses: master-atul/tar-action@v1.0.2
+        id: compressed_output
+        with:
+          command: c
+          files: |
+            ./output
+          outPath: specs.tar.gz
+
+      - name: Add release
+        uses: "marvinpinto/action-automatic-releases@latest"
+        with:
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          automatic_release_tag: "${{ steps.project-version.outputs.version }}"
+          prerelease: false
+          title: "Deploy of protocol specs"
+          files: |
+            specs.tar.gz
