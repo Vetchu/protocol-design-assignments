@@ -14,6 +14,10 @@ Note: All the packets described below start with these fields.
 ### Data/ACK packet
 
 - **seq** _(X bytes)_: The sequence number of the packet, telling which chunk is being processed.
+
+### Special packet
+
+A special packet is a packet that... TODO
     
 ### Init packet
 
