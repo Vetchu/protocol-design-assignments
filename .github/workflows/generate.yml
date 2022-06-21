@@ -15,6 +15,11 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
+      - name: Use Node.js 18.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: 18.x
+
       - name: Get version of the project
         id: project-version
         uses: "euberdeveloper/ga-project-version@main"
@@ -25,8 +30,11 @@ jobs:
       - name: Install Xml2Rfc
         run: sudo apt-get install -y xml2rfc
 
+      - name: Generate main.md from template
+        run: node scripts/generate.js
+
       - name: Generate xml for RFC
-        run: bin/mmark template/main.md > output/spec.xml
+        run: bin/mmark source/main.md > output/spec.xml
 
       - name: Generate final output
         run: xml2rfc output/spec.xml --v3 --html --pdf --text
