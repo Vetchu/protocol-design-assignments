@@ -1,35 +1,39 @@
 %%%
-Title = "{{NAME}} - The most flexible protocol for robust file transfer"
-area = "TUM"
+title = "Robust File Transfer"
+abbrev = "RFT"
+area = "Internet"
 workgroup = "Group I"
+date = 2020-01-01
 
 [seriesInfo]
-name = "{{NAME}}"
-value = "{{ID}}"
-stream = "{{STREAM}}"
-status = "{{STATUS}}"
+name = "Internet-Draft"
+value = "draft-group1-rft-00"
+stream = "IETF"
+status = "informational"
 
-date = "{{DATE}}"
-
-[[author]]
-initials="Bibbo"
-surname="Bubbu"
-fullname="Bibubbu"
 
 [[author]]
-initials="Coap"
-surname="Ciao"
-fullname="CCC"
+initials="A.S."
+surname="Świerkowska"
+fullname="Aleksandra Świerkowska"
+
+[[author]]
+initials="J.K."
+surname="Kuśnierz"
+fullname="Jacek Kuśnierz"
+
+[[author]]
+initials="E.B."
+surname="Berretta"
+fullname="Eugenio Berretta"
 %%%
 
-
-
-.# Abstract
+{{ABSTRACT}}
 
 This is a small test document.
 
 {mainmatter}
 
-# First Section
+{{PARAGRAPHS}}
 
-Hi! *from* Mmark.
+{backmatter}

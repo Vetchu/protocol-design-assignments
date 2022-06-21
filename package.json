@@ -1,12 +1,14 @@
 {
     "version": "0.0.2",
     "meta": {
-        "NAME": "{{NAME}}",
-        "AREA": "TUM",
+        "TITLE": "Robust File Transfer",
+        "ABBREV": "RFT",
+        "AREA": "Internet",
         "WORKGRUP": "Group I",
-        "ID": "name",
+        "DATE": "2022-06-05",
+        "NAME": "Internet-Draft",
+        "VALUE": "draft-group1-rft-00",
         "STREAM": "IETF",
-        "STATUS": "informational",
-        "DATE": "2022-06-05"
+        "STATUS": "informational"
     }
 }
