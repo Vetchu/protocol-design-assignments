@@ -45,7 +45,7 @@ jobs:
         with:
           command: c
           files: |
-            ./output/*
+            output/*
           outPath: specs.tar.gz
 
       - name: Add release
