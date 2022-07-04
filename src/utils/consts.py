@@ -6,3 +6,5 @@ MSG_TYPES = {
     "FIN": 0x04,
     "ERROR": 0xFF
 }
+
+MSG_TYPES_REVERSED = dict(zip(MSG_TYPES.values(), MSG_TYPES.keys()))

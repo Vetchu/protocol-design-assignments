@@ -1,5 +1,6 @@
 from .message import Message
-from consts import MSG_TYPES
+from src.utils.consts import MSG_TYPES
+
 
 class ACK(Message):
     def __init__(self, stream_id, seq_number, window_in_messages, ack_number):

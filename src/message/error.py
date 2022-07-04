@@ -1,6 +1,5 @@
 from .message import Message
-from consts import MSG_TYPES
-
+from src.utils.consts import MSG_TYPES
 
 
 class Error(Message):
