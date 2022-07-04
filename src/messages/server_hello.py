@@ -1,10 +1,9 @@
 from .message import Message
-from src.utils.consts import MSG_TYPES
-
+from .message_types import MessageType
 
 class ServerHello(Message):
-    def __init__(self, stream_id, version, window_in_messages, checksum, last_modified, file_size_bytes):
-        super().__init__(stream_id=stream_id, message_type=MSG_TYPES["SERVER_HELLO"], seq_number=0x00)
+    def __init__(self, stream_id: int, version: int, window_in_messages: int, checksum: int, last_modified: int, file_size_bytes: int):
+        super().__init__(stream_id=stream_id, message_type=MessageType.server_hello, seq_number=0x00)
         self.version = version
         self.next_header_type = 0x00
         self.next_header_offset = 0x00

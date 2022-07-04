@@ -1,13 +1,13 @@
 import socket
 import time
 
+from messages.message_types import MessageType
+
 CLIENT_ADDRESS = ''
 CLIENT_PORT = 8000
 
 SERVER_ADDRESS = 'localhost'
 SERVER_PORT = 12000
-
-from utils.consts import MSG_TYPES
 
 for pings in range(10):
     client_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
@@ -36,8 +36,7 @@ def main(config):
         packet, address = server_socket.recvfrom(1024)
 
         message_header_type = packet[0]
-
-        message_type = MSG_TYPES[message_header_type]
+        message_type = MessageType(message_header_type)
 
     pass
 
